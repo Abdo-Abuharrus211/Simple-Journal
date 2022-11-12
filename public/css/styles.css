@@ -7,10 +7,9 @@ body {
   padding-top: 70px;
   padding-bottom: 70px;
 }
-
 .navbar {
   color: #D6E4E5;
-  background-color: #497174;
+  background-color: #6D9886;
   padding-top: 15px;
   padding-bottom: 15px;
   border: 0;
@@ -23,7 +22,7 @@ body {
   color: #D6E4E5;
 }
 .navbar-nav li a:hover {
-  background-color: #497174;
+  background-color: #6D9886;
   color: #EB6440 !important;
 }
 
