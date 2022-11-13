@@ -21,6 +21,10 @@ body {
 .navbar-nav li a{
   color: #D6E4E5;
 }
+.navbar-brand{
+  font-family: Montserrat;
+  font-size: 3rem;
+}
 .navbar-nav li a:hover {
   background-color: #6D9886;
   color: #EB6440 !important;
