@@ -30,6 +30,13 @@ body {
   color: #EB6440 !important;
 }
 
+.emailButton{
+  margin: 10px;
+  background-color: #D6E4E5;
+}
+.emailButton:hover{
+  background-color: #6D9886;
+}
 .footer-padding {
   padding-bottom: 60px;
 }
