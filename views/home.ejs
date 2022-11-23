@@ -4,9 +4,9 @@
 <h4> <%= homeStartingContent %> </h4>
 
 <%posts.forEach(function(post){ %>
-<h2> <%= post.TITLE %> </h2>
-<p><%= post.CONTENT.substring(0,100) +"..." %>
-  <a href="/posts/<%=post.TITLE %>" >Read more.</a>
+<h2> <%= post.title %> </h2>
+<p> <%= post.content.substring(1,100)+"..."%>
+  <a href="/posts/<%=post._id%>">Read more.</a>
 </p>
 <%})%>
 
