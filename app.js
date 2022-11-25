@@ -65,7 +65,7 @@ app.get("/compose", function(req, res) {
   res.render("compose");
 });
 
-////Post methods for individiual pages:
+/////////////////Post methods for individiual pages://////////////
 
 
 //post method to store user input when composing a post
