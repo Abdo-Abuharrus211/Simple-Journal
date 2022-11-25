@@ -4,6 +4,7 @@ const ejs = require("ejs");
 const _ = require("lodash");
 const mongoose = require("mongoose");
 
+let key = config.MY_API_KEY;
 const app = express();
 app.set('view engine', 'ejs');
 ////////////////////////////////
@@ -16,7 +17,7 @@ app.use(express.urlencoded({
 app.use(express.static("public"));
 
 //connecting to our MongoDB Atlas cluster...
-mongoose.connect("mongodb+srv://admin-abdo:pancakewithcheese@cluster0.ozsghtt.mongodb.net/journalDB", {
+mongoose.connect(key+"journalDB", {
   useNewUrlParser: true
 });
 
