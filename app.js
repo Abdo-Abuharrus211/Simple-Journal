@@ -16,8 +16,9 @@ app.use(express.urlencoded({
 app.use(express.static("public"));
 
 //connecting to our MongoDB Atlas cluster...
-mongoose.connect("mongodb://0.0.0.0:27017/journalDB");
-
+mongoose.connect("mongodb+srv://admin-abdo:pancakewithcheese@cluster0.ozsghtt.mongodb.net/journalDB", {
+  useNewUrlParser: true
+});
 
 /// Consts & Var declarations
 const homeStartingContent = "A journal of a Lonely 4 that can cook.";
@@ -96,6 +97,10 @@ if(port == null || port == ""){
   port = 3000;
 } */
 
-app.listen(3000, function() {
+let port = process.env.PORT;
+if(port == null || port == ""){
+  port = 3000;
+}
+app.listen(port, function() {
   console.log("Server started successfully.");
 });
