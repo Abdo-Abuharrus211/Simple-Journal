@@ -4,12 +4,13 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "engines": {
-    "node": "18.12.0"
+    "node": "18.12.1"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
