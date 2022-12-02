@@ -1,10 +1,11 @@
+require('dotenv').config()
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const _ = require("lodash");
 const mongoose = require("mongoose");
 
-let key = config.MY_API_KEY;
+let key = process.env.HAPPYKEY;
 const app = express();
 app.set('view engine', 'ejs');
 ////////////////////////////////
